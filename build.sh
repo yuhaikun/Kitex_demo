@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-RUN_NAME="Adder"
+RUN_NAME="Foundation"
 
 mkdir -p output/bin
 cp script/* output/

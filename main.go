@@ -1,7 +1,7 @@
 package main
 
 import (
-	kitex_gen "NewTikTok/kitex_gen/adder"
+	kitex_gen "NewTikTok/kitex_gen/foundation"
 	"github.com/cloudwego/kitex/server"
 	"log"
 	"net"
@@ -12,7 +12,7 @@ func main() {
 	var opts []server.Option
 	opts = append(opts, server.WithServiceAddr(addr))
 
-	svr := kitex_gen.NewServer(new(AdderImpl), opts...)
+	svr := kitex_gen.NewServer(new(FoundationImpl), opts...)
 
 	err := svr.Run()
 
